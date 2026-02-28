@@ -107,9 +107,7 @@ fun SegundaPantalla(){
 
 
         Card (
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
             shape = RoundedCornerShape(16.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color(0xFF9191FD)
@@ -179,9 +177,7 @@ fun SegundaPantalla(){
 
 
             Card (
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 16.dp),
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(
                     containerColor = Color(0xFF63D1FD)

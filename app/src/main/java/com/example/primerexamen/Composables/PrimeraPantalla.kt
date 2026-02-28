@@ -109,9 +109,7 @@ fun PrimeraPantalla() {
 
 
         Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp),
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
             shape = RoundedCornerShape(16.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color(0xFF82E025)
@@ -252,10 +250,7 @@ fun PrimeraPantalla() {
         }
 
         Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(120.dp)
-                .padding(horizontal = 16.dp),
+            modifier = Modifier.fillMaxWidth().height(120.dp).padding(horizontal = 16.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
