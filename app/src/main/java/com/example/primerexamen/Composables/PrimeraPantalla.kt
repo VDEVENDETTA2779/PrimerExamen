@@ -190,10 +190,7 @@ fun PrimeraPantalla() {
         Spacer(modifier = Modifier.height(10.dp))
 
         Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(120.dp)
-                .padding(horizontal = 16.dp),
+            modifier = Modifier.fillMaxWidth().height(120.dp).padding(horizontal = 16.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
@@ -202,11 +199,18 @@ fun PrimeraPantalla() {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.rana),
+                Card(
+                    modifier = Modifier.padding(horizontal = 5.dp).size(100.dp),
+                    shape = RoundedCornerShape(16.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(0xFF63D1FD)
+                    )
+                ) {Image(
+                    painter = painterResource(id = R.drawable.pinguino),
                     contentDescription = null,
                     modifier = Modifier.size(100.dp)
-                )
+                )}
+
 
                 Spacer(modifier = Modifier.width(12.dp))
 
@@ -222,12 +226,15 @@ fun PrimeraPantalla() {
             }
 
             Row(
-                verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.CenterVertically,
+
+
             ) {
-                Column {
+
+                Column{
                     Text(
                         text = "$9.9",
-                        fontSize = 30.sp,
+                        fontSize = 27.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color(0xFFEC4D4D)
                     )
@@ -257,11 +264,17 @@ fun PrimeraPantalla() {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.gato),
+                Card(
+                    modifier = Modifier.padding(horizontal = 5.dp).size(100.dp),
+                    shape = RoundedCornerShape(16.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(0xFF8F94FD)
+                    )
+                ) {Image(
+                    painter = painterResource(id = R.drawable.jirafa),
                     contentDescription = null,
                     modifier = Modifier.size(100.dp)
-                )
+                )}
 
                 Spacer(modifier = Modifier.width(12.dp))
 
@@ -282,7 +295,7 @@ fun PrimeraPantalla() {
                 Column {
                     Text(
                         text = "$398",
-                        fontSize = 30.sp,
+                        fontSize = 27.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color(0xFFEC4D4D)
                     )
